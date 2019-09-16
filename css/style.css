@@ -1,5 +1,10 @@
 .jumbotron img{
-	border:3px solid #333;
+	border:3px solid #33ccff;
+
+}
+
+.jumbotron img:hover{
+	border:9px double #33ccff;
 
 }
 
@@ -9,24 +14,53 @@
 
 hr{
 	width: 250px;
-	border-top: 3px solid #999;
+	border-top: 3px solid #33ccff;
+
 }
 
+
 section{
-	min-height: 400px;
+	padding-bottom: 100px;
+	padding-top: 50px;
+
 }
+
+
+.about{
+	margin-top: -30px;
+}
+
+
+.about hr{
+	margin-bottom: 30px;
+}
+
+.about:hover hr{
+	width: 350px;
+	border-top: 2px solid #33ccff;
+}
+
 
 .portfolio{
 	background-color: #eee;
 }
 
+.portfolio:hover hr{
+	width: 350px;
+	border-top: 2px solid #33ccff;
+}
+
 .portfolio h2{
-	margin-top: 50px;
 }
 
 .portfolio a{
 	margin-top: 20px;
 }
+
+.portfolio img:hover{
+	margin-top: -20px;
+}
+
 
 .btn-success {
   color: #fff;
@@ -45,4 +79,66 @@ section{
   color: #28a745;
   background-color: #fff;
   border-color: #1e7e34;
+}
+
+.contact{
+	background-color: #fff;
+}
+
+
+.contact:hover hr{
+	width: 350px;
+	border-top: 2px solid #33ccff;
+}
+
+.contact h2{
+	margin-top: 50px;
+}
+
+.contact input{
+	border-left: #33ccff 2px solid;
+
+}
+
+.contact textarea{
+	border-left: #33ccff 2px solid;
+
+}
+
+.contact textarea:hover{
+	border-left: #33ccff 5px outset;
+
+}
+
+.contact input:hover{
+	border-left: #33ccff 5px outset;
+
+}
+
+label{
+	width: 515px;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 1px;
+
+}
+
+.blue{
+	color: #33ccff;
+	font-weight: bold;
+}
+
+.btn{
+	margin-top: 20px;
+	background-color: #33ccff;
+	border:2px solid white;
+	color: white;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: white;
+	border:2px solid #33ccff;
+	color: #33ccff;
+	border-radius: 5px;
 }
