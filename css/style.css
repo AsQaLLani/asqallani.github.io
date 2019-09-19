@@ -1,10 +1,46 @@
+html{
+	position: relative;
+}
+
+body{
+	margin-bottom: 80px;
+	margin-top:55px;
+}
+
+.navigasi{
+	background-color: #00000090;
+
+	}
+
+.navigasi a{
+
+	margin-top: 20px;
+	background-color: #33ccff;
+	border:2px solid inherit;
+	padding:5px ; 
+	margin:5px;
+	color: black;
+	border-radius: 5px;
+	
+
+}
+
+.navigasi a:hover{
+	color: #33ccff;
+	background-color: inherit;
+	border:2px solid #33ccff;
+	border-radius: 5px;
+}
+
 .jumbotron img{
 	border:3px solid #33ccff;
+	transition: 1s;
 
 }
 
 .jumbotron img:hover{
 	border:9px double #33ccff;
+	transition: 1s;
 
 }
 
@@ -15,6 +51,7 @@
 hr{
 	width: 250px;
 	border-top: 3px solid #33ccff;
+	transition: 1s;
 
 }
 
@@ -30,6 +67,10 @@ section{
 	margin-top: -30px;
 }
 
+.about h2{
+	margin-top: 50px;
+}
+
 
 .about hr{
 	margin-bottom: 30px;
@@ -38,6 +79,7 @@ section{
 .about:hover hr{
 	width: 350px;
 	border-top: 2px solid #33ccff;
+	transition: 1s;
 }
 
 
@@ -48,9 +90,12 @@ section{
 .portfolio:hover hr{
 	width: 350px;
 	border-top: 2px solid #33ccff;
+	transition: 1s;
+
 }
 
 .portfolio h2{
+	margin-top: 50px;
 }
 
 .portfolio a{
@@ -59,6 +104,7 @@ section{
 
 .portfolio img:hover{
 	margin-top: -20px;
+	transition: 1s;
 }
 
 
@@ -89,6 +135,7 @@ section{
 .contact:hover hr{
 	width: 350px;
 	border-top: 2px solid #33ccff;
+	transition: 1s;
 }
 
 .contact h2{
