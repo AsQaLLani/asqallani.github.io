@@ -9,23 +9,23 @@ body{
 
 .navigasi{
 	background-color: #00000090;
-
-	}
-
-.navigasi a{
-
-	margin-top: 20px;
-	background-color: #33ccff;
-	border:2px solid inherit;
-	padding:5px ; 
-	margin:5px;
-	color: black;
-	border-radius: 5px;
-	
-
+	padding:6px;
 }
 
-.navigasi a:hover{
+.navigasi a.nav-link{
+
+	margin:5px;
+	margin-top: 0x;
+	padding:5px; 
+	color: #33ccff;
+	border-radius: 5px;
+}
+
+.logo{
+	margin-left: 0;	
+}
+
+.navigasi a.nav-link:hover{
 	color: #33ccff;
 	background-color: inherit;
 	border:2px solid #33ccff;
@@ -163,7 +163,7 @@ section{
 }
 
 label{
-	width: 515px;
+	float: left;
 	text-align: left;
 	margin-top: 10px;
 	margin-bottom: 1px;
