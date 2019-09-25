@@ -1,7 +1,33 @@
-var canvas=document.getElementsById("canvas");
-var ctx=canvas.getContext("2d");
-var radius=canvas.height/2;
-ctx.translate(radius,radius);
-radius = radius * 0.90;
+//scroll animate
+$('.page-scroll').on('click',function(e){
+	var tujuan=$(this).attr('href');
 
-setInterval(drawClock,1000);
+	var elemenTujuan=$(tujuan);
+
+	$('body').scrollTop(elemenTujuan.offset().top);
+	
+});
+
+
+//password Birthday
+function passwordBdButton(){
+	var passbdasli="anjaymabar";
+	var inputPassBd=document.getElementById('BdInput').value;
+	if(inputPassBd==passbdasli){
+		location.href="https://asqallani.github.io/bday";
+	}
+	else{
+		alert("Salah Njing");	
+}}
+
+
+//showhide Birthday password
+$('#BdForm').hide();
+$('#birthday').on('click',function(){
+	$('#BdForm').toggle();
+});
+
+
+
+
+//last
