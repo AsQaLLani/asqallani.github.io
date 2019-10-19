@@ -3,7 +3,6 @@ html{
 }
 
 body{
-	margin-bottom: 80px;
 	margin-top:55px;
 }
 
@@ -89,8 +88,20 @@ body{
 	border-radius: 5px;
 }
 
+.jumbotron{
+	background-image: url(bgjumbotron.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.jumbotron p{
+	transition: 1s;
+}
+
 .jumbotron img{
 	border:3px solid #33ccff;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 	transition: 1s;
 
 }
@@ -103,6 +114,8 @@ body{
 
 .jumbotron h1{
 	margin-top: 20px;
+	text-shadow: 1px 1px 10px rgba(255,255,255,0.5);
+	transition: 1s;
 }
 
 hr{
@@ -119,6 +132,18 @@ section{
 
 }
 
+.pKanan,.pKiri{
+	opacity: 0;
+	transform: translate(-50px,0);
+}
+
+.pKanan{
+	transform: translate(50px,0);
+}
+
+.pKiri.muncul, .pKanan.muncul{
+	transform: translate(0,0);
+}
 
 .about{
 	margin-top: -30px;
@@ -143,6 +168,17 @@ section{
 .portfolio{
 	background-color: #eee;
 }
+
+.portfolio .img-thumbnail{
+	opacity: 0;
+	transform: translate(0,-250px);
+}
+
+.portfolio .img-thumbnail.muncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
 
 .portfolio:hover hr{
 	width: 350px;
@@ -248,4 +284,40 @@ label{
 	border:2px solid #33ccff;
 	color: #33ccff;
 	border-radius: 5px;
+}
+
+#lose{
+	position: fixed;
+	left: 50%;
+    top: 50%;
+    margin: 0;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+     box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.2);
+     font-size: 200px;
+     background-color: black;
+     color: white;
+}
+
+.btngame{
+	width: 50px; 
+	height: 50px;
+}
+
+.formparallax{
+	transform: translate(200px,0);
+	opacity: 0;
+}
+
+.formparallax.muncul{
+	transform: translate(0,0);
+	opacity: 1;
+	transition: 1s;
+}
+
+footer{
+	background-color: #333;
+	height: 200px;
+	color: #33ccff;
+	padding:35px;
 }

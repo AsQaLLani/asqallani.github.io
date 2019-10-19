@@ -40,4 +40,64 @@ $('#birthday').each(function(){
 });
 
 
+//about
+	$(window).on('load',function(){
+		$('.pKiri').addClass('muncul');
+		$('.pKanan').addClass('muncul');
+	});
+
+
+//parallax
+$(window).scroll(function(){
+
+	//jumbotron
+	var wScroll=$(this).scrollTop();
+
+	$('.jumbotron img').css({
+		'transform' : 'translate(0px,'+ wScroll/4 +'%)'
+	});
+
+	$('.jumbotron h1').css({
+		'transform' : 'translate(0px,'+ wScroll*3 +'%)'
+	});
+
+	$('.jumbotron p').css({
+		'transform' : 'translate(0px,'+ wScroll*5 +'%)'
+	});
+
+
+
+
+
+
+
+	//portfolio
+	if(wScroll>$('.portfolio').offset().top -250){
+		$('.portfolio .img-thumbnail').each(function(i){
+			setTimeout(function(){
+				$('.portfolio .img-thumbnail').eq(i).addClass('muncul');
+
+			},350*i+1);
+			
+		});
+		
+	}
+
+
+	//contact
+	if(wScroll>$('.contact').offset().top -250){
+		$('.formparallax').each(function(i){
+			setTimeout(function(){
+				$('.formparallax').eq(i).addClass('muncul');
+			},350*i+1);
+			
+		});
+		
+	}
+});
+
+
+
+
+
 //last
